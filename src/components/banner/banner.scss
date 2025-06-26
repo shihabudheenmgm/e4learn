@@ -1,0 +1,94 @@
+.bannerbg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    z-index: -1;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.playbtn {
+    position: absolute;
+    inset: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.search {
+    padding: 50px 0 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        button {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border: 1px solid;
+
+            &.explore {
+                background: #0a0a1f;
+                color: white;
+            }
+            &.orientation {
+                background: white;
+                color: #000;
+            }
+            &.live-session {
+                background: #eafff2;
+                color: #007f3d;
+            }
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background: #f1f1f1;
+        padding: 6px;
+        border-radius: 32px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        max-width: 640px;
+
+        input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 12px 20px;
+            font-size: 1rem;
+            outline: none;
+            color: #333;
+        }
+        .search-btn {
+            background: #0a0a1f;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 32px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
